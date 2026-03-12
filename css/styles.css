@@ -592,3 +592,41 @@ h3 {
 @media (max-width: 600px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Team cards */
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+.team-card {
+  text-align: center;
+  background: var(--crema);
+  border-radius: 16px;
+  padding: 28px 20px;
+}
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto 16px;
+  display: block;
+  border: 3px solid var(--verde);
+}
+.team-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--texto);
+  margin-bottom: 8px;
+}
+.team-card p {
+  font-size: 14px;
+  color: var(--texto-suave);
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .team-cards { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; }
+}
