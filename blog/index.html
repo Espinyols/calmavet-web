@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Calmavet — Guías sobre eutanasia, duelo y cuidado de mascotas</title>
+  <meta name="description" content="Artículos sobre eutanasia a domicilio, duelo por mascotas, incineración y cuidados paliativos. Información honesta y empática para familias de Cataluña.">
+  <link rel="canonical" href="https://calmavet.es/blog">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .blog-card {
+      background: var(--blanco, #fff);
+      border: 1px solid var(--borde, #e0d9ce);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 32px rgba(107,143,113,0.15);
+      transform: translateY(-3px);
+    }
+    .blog-card-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: var(--verde-claro, #EAF0EB);
+    }
+    .blog-card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-tag {
+      display: inline-block;
+      background: var(--verde-claro, #EAF0EB);
+      color: var(--verde, #6B8F71);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    .blog-card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--texto, #2C2C2C);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .blog-card p {
+      font-size: 15px;
+      color: var(--texto-suave, #5A5A5A);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+    .blog-card-meta {
+      font-size: 13px;
+      color: var(--texto-suave, #5A5A5A);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .blog-card-meta span { opacity: 0.5; }
+    .blog-read {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--verde, #6B8F71);
+      margin-top: 14px;
+    }
+    .blog-hero {
+      background: linear-gradient(160deg, var(--crema, #F5F0E8) 0%, var(--verde-claro, #EAF0EB) 100%);
+      padding: 64px 24px 48px;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 800;
+      color: var(--texto, #2C2C2C);
+      margin-bottom: 12px;
+    }
+    .blog-hero p {
+      font-size: 17px;
+      color: var(--texto-suave, #5A5A5A);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .placeholder-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+    .placeholder-img.green { background: var(--verde-claro, #EAF0EB); }
+    .placeholder-img.cream { background: var(--crema, #F5F0E8); }
+  </style>
+</head>
+<body>
+
+  <nav style="background:#fff; border-bottom:1px solid #E0D9CE; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100;">
+    <a href="../index.html" style="display:flex; align-items:center;">
+      <img src="../images/logo-calmavet.png" alt="Calmavet" style="height:44px; width:auto; object-fit:contain;">
+    </a>
+    <a href="https://wa.me/34639607103" target="_blank" style="background:#25D366; color:#fff; padding:10px 20px; border-radius:50px; font-weight:700; font-size:14px; text-decoration:none;">WhatsApp</a>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="eyebrow" style="display:inline-block; background:#6B8F71; color:#fff; font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:6px 16px; border-radius:50px; margin-bottom:20px;">Recursos y guías</div>
+    <h1>Información honesta para un momento difícil</h1>
+    <p>Artículos escritos por nuestro equipo veterinario para ayudarte a entender el proceso, gestionar el duelo y tomar decisiones con calma.</p>
+  </section>
+
+  <section style="padding: 64px 24px;">
+    <div style="max-width: 960px; margin: 0 auto;">
+      <div class="blog-grid">
+
+        <!-- Artículo 1 -->
+        <a href="cuando-es-el-momento.html" class="blog-card">
+          <div class="placeholder-img green">🐾</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Eutanasia</span>
+            <h2>¿Cuándo es el momento de la eutanasia? Señales que debes conocer</h2>
+            <p>Una de las preguntas más difíciles para cualquier familia. Te explicamos qué señales indican que tu mascota está sufriendo y cómo tomar esta decisión con calma y sin culpa.</p>
+            <div class="blog-card-meta">🗓️ Marzo 2026 <span>·</span> 5 min lectura</div>
+            <div class="blog-read">Leer artículo →</div>
+          </div>
+        </a>
+
+        <!-- Artículo 2 -->
+        <a href="eutanasia-domicilio-vs-clinica.html" class="blog-card">
+          <div class="placeholder-img cream">🏠</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">A domicilio</span>
+            <h2>Eutanasia en casa vs. en clínica: ¿cuál es mejor para tu mascota?</h2>
+            <p>Comparamos las dos opciones con honestidad. Cuándo tiene sentido cada una, qué ventajas tiene el domicilio para el animal y para la familia, y qué esperar en cada caso.</p>
+            <div class="blog-card-meta">🗓️ Marzo 2026 <span>·</span> 4 min lectura</div>
+            <div class="blog-read">Leer artículo →</div>
+          </div>
+        </a>
+
+        <!-- Artículo 3 -->
+        <a href="duelo-por-mascota.html" class="blog-card">
+          <div class="placeholder-img green">💚</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Duelo</span>
+            <h2>El duelo por una mascota es real. Cómo atravesarlo sin que nadie te diga "era solo un animal"</h2>
+            <p>Perder a una mascota duele. Mucho. Y el entorno no siempre lo entiende. Este artículo es para ti si estás pasando por ese dolor o quieres entender cómo acompañar a alguien que lo vive.</p>
+            <div class="blog-card-meta">🗓️ Febrero 2026 <span>·</span> 6 min lectura</div>
+            <div class="blog-read">Leer artículo →</div>
+          </div>
+        </a>
+
+        <!-- Artículo 4 -->
+        <a href="incineracion-individual-vs-colectiva.html" class="blog-card">
+          <div class="placeholder-img cream">🌸</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Incineración</span>
+            <h2>Incineración individual vs. colectiva: qué incluye cada opción y cómo elegir</h2>
+            <p>Sin tecnicismos ni presión. Te explicamos la diferencia real entre los dos tipos de incineración, qué recibes en cada caso y qué suelen elegir las familias.</p>
+            <div class="blog-card-meta">🗓️ Febrero 2026 <span>·</span> 3 min lectura</div>
+            <div class="blog-read">Leer artículo →</div>
+          </div>
+        </a>
+
+        <!-- Artículo 5 -->
+        <a href="mascotas-tercera-edad-cuidados.html" class="blog-card">
+          <div class="placeholder-img green">🐶</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Cuidados paliativos</span>
+            <h2>Mascotas en la tercera edad: cómo saber si está bien o sufriendo</h2>
+            <p>Los animales mayores cambian. Aprende a leer las señales de bienestar y malestar en perros y gatos senior, y cuándo puede ser momento de pedir ayuda veterinaria.</p>
+            <div class="blog-card-meta">🗓️ Enero 2026 <span>·</span> 5 min lectura</div>
+            <div class="blog-read">Leer artículo →</div>
+          </div>
+        </a>
+
+        <!-- Artículo 6 - próximamente -->
+        <div class="blog-card" style="opacity:0.6; cursor:default;">
+          <div class="placeholder-img cream">✍️</div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Próximamente</span>
+            <h2>Explicar la muerte de una mascota a los niños: una guía para padres</h2>
+            <p>Cómo hablar con los más pequeños sobre la pérdida de su compañero. Sin mentiras, sin evasivas, con palabras que ayuden a procesar.</p>
+            <div class="blog-card-meta">🗓️ Abril 2026 <span>·</span> Próximamente</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Newsletter -->
+  <section style="background: #6B8F71; padding: 56px 24px; text-align:center;">
+    <h2 style="color:#fff; font-size:clamp(22px,3vw,32px); font-weight:800; margin-bottom:12px;">¿Necesitas orientación ahora?</h2>
+    <p style="color:rgba(255,255,255,0.85); font-size:17px; max-width:460px; margin:0 auto 32px;">Escríbenos por WhatsApp. Te respondemos con calma y sin compromiso.</p>
+    <a href="https://wa.me/34639607103?text=Hola%20Calmavet%2C%20he%20le%C3%ADdo%20el%20blog%20y%20quisiera%20orientaci%C3%B3n." target="_blank"
+       style="background:#25D366; color:#fff; padding:16px 36px; border-radius:50px; font-size:17px; font-weight:700; text-decoration:none; display:inline-block; box-shadow:0 4px 20px rgba(0,0,0,0.2);">
+      Escríbenos por WhatsApp
+    </a>
+  </section>
+
+  <footer style="background:#2C2C2C; color:rgba(255,255,255,0.6); text-align:center; padding:28px 24px; font-size:14px;">
+    © 2026 Calmavet · <a href="../index.html" style="color:#6B8F71;">Volver a la web</a> · Web por <a href="https://nova-labs.digital" target="_blank" style="color:#6B8F71;">NovaLabs Digital</a>
+  </footer>
+
+</body>
+</html>
